@@ -1,0 +1,59 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+} 
+
+.top-banner {
+    background-image: url(../assests/Pictures/ny_bynight.jpg);
+    background-size: cover;
+    
+}
+
+.top-banner h1 {
+position: relative;
+top: 5rem;
+text-align: center;
+color: whitesmoke;
+font-weight: normal;
+}
+
+.portrait{
+    
+    margin: 100px auto -30px;
+    background-image: url(../assests/Pictures/batman_portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: solid 5px whitesmoke;
+    position: abosolute;
+    top: -85px;
+}
+
+#firstmodule{
+    background-color: #4D4D4D;
+    margin: 50px 0px 10px;
+    border-radius: 20px;
+    display: flex;
+    text-align: justify;
+    padding: 20px 30px;
+    color: whitesmoke;
+    }
+
+.module {
+    background-color: #4D4D4D;
+    margin: 10px 0px ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    color: whitesmoke;
+
+   
+    
+}    
+
+
+
+
