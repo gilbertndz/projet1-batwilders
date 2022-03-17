@@ -1,15 +1,20 @@
 *{
     font-family:'Poppins', sans-serif;
-    margin: 0;
     color: whitesmoke;
+    margin: 0
+   
 } 
 
 body {
     background-image: url(../assests/Pictures/texture2.jpg);
     background-size: contain;
+    margin: 0 10px;
+
 }
 
 .top-banner {
+    width: 100vw;
+    margin: -10px;
     background-image: url(../assests/Pictures/ny_bynight.jpg);
     background-size: 100%;
     background-position: center;
@@ -21,6 +26,7 @@ body {
     top: 5rem;
     text-align: center;
     font-weight: normal;
+   
 }
 
 .portrait{
@@ -29,23 +35,26 @@ body {
     background-image: url(../assests/Pictures/batman_portrait.jpg);
     background-size: cover;
     background-position: center;
-    height: 10rem;
-    width: 10rem;
+    height: 30vw;
+    width: 30vw;
     border-radius: 50%;
     border: solid 5px whitesmoke;
 }
 
 .firstmodule{
     background-color: #4D4D4D;
-    margin: 50px 0px 10px;
+    margin: 50px auto 20px;
     border-radius: 20px;
     text-align: center;
     padding: 20px 30px;
     }
 
 .module {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     background-color: #4D4D4D;
-    margin: 10px 0px ;
+    margin: 10px ;
     border-radius: 20px;
     justify-content: center;
     padding: 20px 30px;
@@ -80,8 +89,7 @@ body {
 }
 
 
-.buttons {
-    height: 6rem;
+.buttons { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,8 +100,8 @@ body {
 .buttons div{
     margin: 0px 5px;
     background-color: black;
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     border: solid 4px whitesmoke;
     display: flex;
@@ -113,6 +121,7 @@ body {
 
 
 .skill-box{
+        justify-items: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -124,12 +133,13 @@ body {
 
 .rating {
     display: flex;
-}
+} 
 
 .rating div {
     box-sizing: border-box;
-    height: 1.7rem;
-    width: 1.7rem;
+    max-height: 50px;
+    max-width: 50px;
+    
     background-color: #5f39b1;
     border-radius: 50%;
     margin: 1px;
@@ -138,6 +148,9 @@ body {
 
 .skill{
     margin: 10px 0px;
+
+    
+    
 }
 .rating div :last-child {
      background-color: #5f39b1;
@@ -148,11 +161,11 @@ body {
 }
 
 .experience {
-    height: 100%;
-    margin-bottom: 0pos;
+    margin-bottom: 0;
 }
 
 .nemesis{
+        justify-items: center;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
@@ -162,10 +175,17 @@ body {
 }
 
 .nemesis .portrait{
-        margin: 20px;
+        display: flex;
+        align-items: flex-end;
+        max-width: 300px;
+        max-height: 300px;
+        min-height: 150px;
+        min-width: 150px ;
+        
 }
 .portrait.joker {
     background-image: url(../assests/Pictures/joker.jpg);
+   
 }
 
 .portrait.freeze {
@@ -180,3 +200,59 @@ body {
     background-image: url(../assests/Pictures/poison_ivy.jpg);
     background-size: cover;
 }
+
+.info {
+    margin: 0px auto;
+    background-color: #5f39b1;
+    height: 10vw;
+    width: 30vw;
+    border-radius: 20px;
+    border: solid 2px whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -20px;
+    box-shadow: 1px -1px 1px 2px rgba(0,0,0,0.52) inset;
+    
+}
+
+
+@media screen and (min-width:426px) {
+    .top-banner h1 {
+        font-size: 3rem;
+    }
+
+    .rating div {
+       
+        height: 7.5vw;
+        width: 7.5vw;
+}
+    
+}
+
+@media screen and (max-width: 425px){
+
+    .top-banner h1 {
+        font-size: 10vw;
+    }
+
+.rating div {
+       
+        height: 10vw;
+        width: 10vw;
+}
+.skill-box{
+        grid-template-columns: 1fr;  
+}
+
+.nemesis{
+    grid-template-columns: 1fr;
+}
+
+.nemesis .portrait{
+    margin: 20px;
+    
+}
+}
+   
