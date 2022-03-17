@@ -5,7 +5,7 @@
 
 .top-banner {
     background-image: url(../assests/Pictures/ny_bynight.jpg);
-    background-size: cover;
+    background-size: contain;
     
 }
 
@@ -27,18 +27,16 @@ font-weight: normal;
     width: 10rem;
     border-radius: 50%;
     border: solid 5px whitesmoke;
-    position: abosolute;
-    top: -85px;
 }
 
-#firstmodule{
+.firstmodule{
     background-color: #4D4D4D;
     margin: 50px 0px 10px;
     border-radius: 20px;
-    display: flex;
-    text-align: justify;
-    padding: 20px 30px;
+    text-align: center;
+    padding: 20px 30px 70px;
     color: whitesmoke;
+  
     }
 
 .module {
@@ -48,12 +46,30 @@ font-weight: normal;
     display: flex;
     justify-content: center;
     padding: 20px 30px;
-    color: whitesmoke;
-
-   
+    color: whitesmoke;  
     
-}    
+}
 
+.module h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+.buttons {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.buttons div {
+    background-color: black;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    border: solid 5px whitesmoke;
+}
 
 
 
