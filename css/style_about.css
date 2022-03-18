@@ -6,7 +6,7 @@
 } 
 
 body {
-    background-image: url(../assests/Pictures/texture2.jpg);
+    background-image: url(../assets/Pictures/texture2.jpg);
     background-size: contain;
     margin: 0 10px;
 
@@ -15,7 +15,7 @@ body {
 .top-banner {
     width: 100vw;
     margin: -10px;
-    background-image: url(../assests/Pictures/ny_bynight.jpg);
+    /*background-image: url(../assets/Pictures/ny_bynight.jpg);*/
     background-size: 100%;
     background-position: center;
     
@@ -32,7 +32,7 @@ body {
 .portrait{
     
     margin: 100px auto -30px;
-    background-image: url(../assests/Pictures/batman_portrait.jpg);
+    background-image: url(../assets/Pictures/batman_portrait.jpg);
     background-size: cover;
     background-position: center;
     height: 30vw;
@@ -188,20 +188,20 @@ body {
 
 }
 .portrait.joker {
-    background-image: url(../assests/Pictures/joker.jpg);
+    background-image: url(../assets/Pictures/joker.jpg);
    
 }
 
 .portrait.freeze {
-    background-image: url(../assests/Pictures/Mr._Freeze.webp);
+    background-image: url(../assets/Pictures/Mr._Freeze.webp);
 }
 
 .portrait.bane{
-    background-image: url(../assests/Pictures/bane.jpg);
+    background-image: url(../assets/Pictures/bane.jpg);
 }
 
 .portrait.ivy{
-    background-image: url(../assests/Pictures/poison_ivy.jpg);
+    background-image: url(../assets/Pictures/poison_ivy.jpg);
     background-size: cover;
 }
 
