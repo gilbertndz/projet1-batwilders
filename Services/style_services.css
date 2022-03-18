@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: 'Poppins';
     }
 header {
     background-color: dimgrey;
@@ -14,8 +17,6 @@ header {
     display : flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bolder;
-    font-family: 'Poppins';
     color: #FFFFFF;
     }
 .rescue_img {
@@ -25,23 +26,18 @@ header {
     }    
 .rescue_persons h2 {
     width: 200px;
-    height: 41px;
-    left: 114px;
-    top: 353px;    
-    font-family: 'Poppins';
-    font-weight: 900;
+    height: 41px;   
     font-size: 30px;
     line-height: 24px;
     text-align: center;    
-    color: #FFFFFF;
     }
 .services_list {
-    background: #FFFFFF;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: .2rem;
-    border: 2px ridge #FFFFFF;
+    border: 2px ridge whitesmoke;
     border-radius: 20px;
     }
 .under_list{  
@@ -64,20 +60,23 @@ header {
 .ride_img {
     width: 150px;
     border-radius: 50%;
-    border: 5px ridge #FFFFFF;
+    border: 5px ridge whitesmoke;
     }    
 .ride_persons h2 {
     width: 200px;
-    height: 41px;
-    left: 114px;
-    top: 353px;    
-    font-family: 'Poppins';
-    font-weight: 700;
+    height: 41px;   
     font-size: 30px;
     line-height: 24px;
     text-align: center;    
-    color: #FFFFFF;
     }
+.city {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .2rem;
+    width: 600px;
+    height: 100px;
+      }
 .featuring_superman {
     border: 3px ridge #696969;
     border-radius: 20px;
