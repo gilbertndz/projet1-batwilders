@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/style_contact.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/style_contact.css">
+  <title>Document</title>
 </head>
 <header>
-    <nav class="site-nav">
-      <img src="../assests/Pictures/logo.svg" alt="logo">
-      <div class="menu-toggle">
-        <div class="hamburger"></div>
-      </div>
+  <nav class="site-nav">
+    <img src="../assests/Pictures/logo.svg" alt="logo">
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
 
-      <ul class="open desktop">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">A propos de Batman</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <ul class="open desktop">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">A propos de Batman</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 <body>
   <div class="flex">
     <div classe="title">
-     <H1> Contactez-nous</H1>
+      <H1> Contactez-nous</H1>
     </div>
 
     <form>
-      
+
       <div class="flexname">
         <div>
           <label for="user_firstName">Nom :</label>
-          <input type="text" id="firstName" name="user_firstName";">
+          <input type="text" id="firstName" name="user_firstName" ;">
+        </div>
+        <div>
+          <label for="user_name">Prénom :</label>
+          <input type="text" id="name" name="user_name" ;">
+        </div>
+      </div>
+
+      <div>
+        <label for="user_mail">E-mail :</label>
+        <input type="email" id="mail" name="user_mail" ;">
+      </div>
+      <div class="textarea">
+        <textarea id="message" placeholder="Ecrivez votre bat-message" rows="7" cols="25"></textarea>
       </div>
       <div>
-          <label for="user_name">Prénom :</label>
-          <input type="text" id="name" name="user_name";">
+        <button type="submit" value="Envoyer">Envoyer</button>
       </div>
-      </div>
-      
-        <div>
-            <label for="user_mail">E-mail :</label>
-            <input type="email" id="mail" name="user_mail";">
-        </div>
-        <div class="textarea">
-            <textarea id="message" placeholder="Ecrivez votre bat-message" rows="7" cols="25"></textarea>
-        </div>
-        <div>
-          <button type="submit" value="Envoyer">Envoyer</button>
-        </div>
-        </div>
-    </form>
+  </div>
+  </form>
 
 
-    <script type="text/javascript" src="../Scripts/script_contact.js"></script>
+  <script type="text/javascript" src="../Scripts/script_contact.js"></script>
 </body>
+
 </html>
