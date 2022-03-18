@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+section.block-content {
+    margin-top: 60px;
+    height: 294px;
+    width: 340px;
+    left: 44px;
+    top: 306px;
+    background-color: #4D4D4D;
+    border-radius: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+h2 {
+font-family: 'Poppins';
+font
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: white;}
+
+article {
+margin-top: 25px;
+margin-bottom: 25px;
+font-family: 'Poppins';
+font-size: 16px;
+font-style: normal;
+font-weight: 200;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+
+.button-1 {
+  background-color: #717171;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #4D4D4D;
+  border: solid 1px white;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #4D4D4D;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+a {text-decoration: none;}
+li {list-style: none;}
+ul {padding-left: 0rem;}
+
+/*FOOTER*/
+.center-foot {display: block;margin-left: auto;margin-right: auto}
+.txt-center {text-align: center;}
+.marg-foot {padding: 10px}
+.flex {display: flex;}
+.margin-top-btn {margin-top: 25px;}
+input {padding: 10px;border-radius: 10px;border: 1px solid black;}
+button {padding: 10px 40px 10px 40px;background-color: #848484;color: white;border-radius: 15px;}
+.padding-20 {padding: 20px;}
+p {padding-top: 30px; padding-bottom: 20px;}
+@media (min-width:780px) {
+
+/* MAIN */
+
+.flex-content {display: flex;}
+
+/* FOOTER */
+footer {margin-top: 55px;}
+img#logo-foot {margin-left: 0px;}
+div#info-foot {text-align: left;}
+div#footer-responsive {display: flex; justify-content: space-between;}
+div#reseaux-sociaux {margin-top: 0px; padding: 20px}
+div#newsletter {margin-top: 0px; text-align: left; padding: 20px}
+li {text-align: left;}
+
+}
