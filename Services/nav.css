@@ -1,5 +1,5 @@
-
-  /* BURGER */
+ 
+ /* BURGER */
  nav {margin:0;padding:0; background-color: #4D4D4D}
  nav ul {display: flex;flex-direction: column;list-style-type:none;padding:0;margin:0;display:none;}
  nav ul.opening {display:block;height:30px;margin-bottom: 400px;}
@@ -30,4 +30,4 @@
 #front-img {width: 100%; height: 388px;}
 section#presentation {display: flex}
 img#txt-presentation {width: 100%; height: 366px;}
- }
+}
