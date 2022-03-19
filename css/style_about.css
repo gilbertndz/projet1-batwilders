@@ -1,9 +1,8 @@
-*{
-    font-family:'Poppins', sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     color: whitesmoke;
     margin: 0
-   
-} 
+}
 
 body {
     background-image: url(../assets/Pictures/texture2.jpg);
@@ -15,10 +14,10 @@ body {
 .top-banner {
     width: 100vw;
     margin: -10px;
-    /*background-image: url(../assets/Pictures/ny_bynight.jpg);*/
+    /*background-image: url(../img/ny_bynight.jpg);*/
     background-size: 100%;
     background-position: center;
-    
+
 }
 
 .top-banner h1 {
@@ -26,13 +25,13 @@ body {
     top: 5rem;
     text-align: center;
     font-weight: normal;
-   
+
 }
 
-.portrait{
-    
+.portrait {
+
     margin: 100px auto -30px;
-    background-image: url(../assets/Pictures/batman_portrait.jpg);
+    background-image: url(../img/batman_portrait.jpg);
     background-size: cover;
     background-position: center;
     height: 30vw;
@@ -41,13 +40,13 @@ body {
     border: solid 5px whitesmoke;
 }
 
-.firstmodule{
+.firstmodule {
     background-color: #4D4D4D;
     margin: 50px 10px 20px;
     border-radius: 20px;
     text-align: center;
     padding: 20px 30px;
-    }
+}
 
 .module {
     display: flex;
@@ -58,9 +57,9 @@ body {
     border-radius: 20px;
     justify-content: center;
     padding: 20px 30px;
-    
-    
-    
+
+
+
 }
 
 .container {
@@ -71,14 +70,14 @@ body {
 }
 
 
-.container div{
+.container div {
     text-align: center;
     width: 100%;
-    margin : 10px 0px;
+    margin: 10px 0px;
 }
 
 
-.module h3{
+.module h3 {
     font-size: 4vw;
 }
 
@@ -86,20 +85,20 @@ body {
     font-size: 5vw;
 }
 
-.module p{
+.module p {
     font-size: 3vw;
 }
 
 
-.buttons { 
+.buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     border-radius: 20px;
 }
 
-.buttons div{
+.buttons div {
     margin: 0px 5px;
     background-color: black;
     height: 4rem;
@@ -109,33 +108,33 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.buttons div:nth-child(2){
+.buttons div:nth-child(2) {
     background-color: #5f39b1;
 }
 
 
-.buttons div:nth-child(3){
+.buttons div:nth-child(3) {
     background-color: #FF2567;
 }
 
 
-.skill-box{
-        justify-items: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-   
+.skill-box {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
 }
 
 
 .rating {
     display: flex;
-} 
+}
 
 .rating div {
     box-sizing: border-box;
@@ -147,59 +146,60 @@ body {
     border: solid 2px whitesmoke;
 }
 
-.skill{
+.skill {
     margin: 10px 0px;
 
-    
-    
+
+
 }
 
 
-.rating .empty{
-    background-color: #4D4D4D ;
+.rating .empty {
+    background-color: #4D4D4D;
 }
 
 .experience {
     margin-bottom: 0;
 }
 
-.nemesis{
-        justify-items: center;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+.nemesis {
+    justify-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
 }
 
-.nemesis .portrait{
-        display: flex;
-        align-items: flex-end;
-        max-width: 300px;
-        max-height: 300px;
-        min-height: 150px;
-        min-width: 150px ;
-        margin: 20px 10px;
+.nemesis .portrait {
+    display: flex;
+    align-items: flex-end;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 150px;
+    min-width: 150px;
+    margin: 20px 10px;
 
 
 }
+
 .portrait.joker {
-    background-image: url(../assets/Pictures/joker.jpg);
-   
+    background-image: url(../img/joker.jpg);
+
 }
 
 .portrait.freeze {
-    background-image: url(../assets/Pictures/Mr._Freeze.webp);
+    background-image: url(../img/Mr._Freeze.webp);
 }
 
-.portrait.bane{
-    background-image: url(../assets/Pictures/bane.jpg);
+.portrait.bane {
+    background-image: url(../img/bane.jpg);
 }
 
-.portrait.ivy{
-    background-image: url(../assets/Pictures/poison_ivy.jpg);
+.portrait.ivy {
+    background-image: url(../img/poison_ivy.jpg);
     background-size: cover;
 }
 
@@ -215,72 +215,73 @@ body {
     justify-content: center;
     position: relative;
     bottom: -20px;
-    box-shadow: 1px -1px 1px 2px rgba(0,0,0,0.52) inset;
-    
+    box-shadow: 1px -1px 1px 2px rgba(0, 0, 0, 0.52) inset;
+
 }
 
-.info h3{
-    font-size:calc(5px + 1.5vw);
+.info h3 {
+    font-size: calc(5px + 1.5vw);
 }
 
-@media screen and (min-width: 400px){
-    .skill-box{
+@media screen and (min-width: 400px) {
+    .skill-box {
         grid-template-columns: repeat(2, 1fr);
-           
-   
+
+
+    }
+
+    .nemesis {
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
 }
 
-.nemesis{
-    
-    grid-template-columns: repeat(2, 1fr);
-    
 
-}
+@media screen and (min-width:1024px) {
+    .buttons div {
+        display: none;
+    }
 
-}
-
-
-@media screen and (min-width:1024px){
-    .buttons div{
-        display: none;}
-
-    .firstmodule{
+    .firstmodule {
         margin: 50px 0px 5px;
-            }
-    
+    }
+
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
     body {
-        background-image: url(../assets/Pictures/texture2.jpg);
+        background-image: url(../img/texture2.jpg);
         background-size: cover;
         width: 70%;
         margin: 0 auto;
-    
+
     }
 
     .top-banner {
         width: 100vw;
         margin: auto;
-        /*background-image: url(../assets/Pictures/ny_bynight.jpg);*/
+        /*background-image: url(../img/ny_bynight.jpg);*/
         background-size: 100%;
         background-position: center;
         width: 100%;
-        
+
     }
-    
+
     .top-banner h1 {
         font-size: 4vw;
         position: relative;
         top: 5rem;
-        
+
     }
 
-    .portrait{
-    
+    .portrait {
+
         margin: 100px auto -30px;
-        background-image: url(../assets/Pictures/batman_portrait.jpg);
+        background-image: url(../img/batman_portrait.jpg);
         background-size: cover;
         background-position: center;
         height: 20vw;
@@ -288,7 +289,7 @@ body {
         border-radius: 50%;
         border: solid 5px whitesmoke;
     }
-    
+
 
     .module {
         display: flex;
@@ -299,51 +300,49 @@ body {
         border-radius: 20px;
         justify-content: center;
         padding: 20px 30px;
-        
-        
-        
+
+
+
     }
 
-    .firstmodule{
+    .firstmodule {
         font-size: 1.5vw;
         background-color: #4D4D4D;
         margin: 50px 0px 20px;
         border-radius: 20px;
         text-align: center;
         padding: 20px 30px;
-        }
+    }
 
 
-    
+
     .module h2 {
         font-size: 2vw;
     }
-    .module h3{
+
+    .module h3 {
         font-size: 1.5vw;
     }
-    
-    .module p{
+
+    .module p {
         font-size: 1vw;
     }
-        
-        
-    }
-    .rating div {
 
-        height: 4vw;
-        width: 4vw;
-        border: solid 0.3vw whitesmoke;
-        margin: 20px 0.2vw;
 
-    }
+}
 
-    .nemesis .portrait{
-        display: flex;
-        align-items: flex-end;
-        max-width: 700px;
-        max-height: 700px;
-    }
+.rating div {
 
-    
-        
+    height: 4vw;
+    width: 4vw;
+    border: solid 0.3vw whitesmoke;
+    margin: 20px 0.2vw;
 
+}
+
+.nemesis .portrait {
+    display: flex;
+    align-items: flex-end;
+    max-width: 700px;
+    max-height: 700px;
+}
