@@ -5,9 +5,9 @@
 }
 
 body {
-    background-image: url(../img/texture2.jpg);
+    /*background-image: url(../img/texture2.jpg);*/
     background-size: contain;
-    margin: 0 10px;
+    
 
 }
 
@@ -251,10 +251,10 @@ body {
 
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
 
     body {
-        background-image: url(../img/texture2.jpg);
+       
         background-size: cover;
         width: 70%;
         margin: 0 auto;
@@ -264,7 +264,7 @@ body {
     .top-banner {
         width: 100vw;
         margin: auto;
-        /*background-image: url(../img/ny_bynight.jpg);*/
+        background-image: url(../img/ny_bynight.jpg);
         background-size: 100%;
         background-position: center;
         width: 100%;
@@ -345,4 +345,4 @@ body {
     align-items: flex-end;
     max-width: 700px;
     max-height: 700px;
-}
+} 
