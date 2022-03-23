@@ -63,7 +63,56 @@
     </div>
 
     <!-- bt card via forcheach -->
+    
+
+    <div class="card">
+    <div class='wiki-title'>   
+    <h2>Wiki-Vilain</h2>
+    <h5>Enrichissez la Bat-Database en soumettant un super-vilain</h5>
+    </div>
+      <div class="card-body">
         
+        <form action="wiki_vilain_submit.php" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Nom</label>
+            <input type="text" name='lastname' class="form-control" id="lastname" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="firstname" class="form-label">Prénom</label>
+            <input type="text" name='firstname' class="form-control" id="firstname" placeholder="">
+          </div>
+
+          <label for="status" class="form-label">Statut actuel</label>
+          <select class="form-select" name="status">
+          <option selected value="wanted">Recherché(e)</option>
+          <option value="in prison">En prison</option>
+          <option value="unknown">Inconnu</option>
+          </select>
+
+          <label for="picture" class="form-label">Portrait</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">URL</span>
+            <input type="text" name='picture' class="form-control" placeholder="Image URL only">
+          </div>
+
+
+          
+          <button type="submit" class="btn btn-primary">Soumettre</button>
+         </form>
+        
+        <?php 
+        $i = count($vilain);
+        if(isset($vilain[$i])){
+          
+           $vilain[]['name'] = $_POST['firstname'].' '.$_POST['lastname'];
+           $vilain[$i]['status'] = $_POST['status'];
+           $vilain[$i]['picture'] = $_POST['picture'];
+          }
+        
+          ?>
+      </div>
+    </div>
+   
     
  
 <div class="container hm-width">
@@ -72,11 +121,11 @@
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
           echo '<div class="card" style="width: 18rem;">'.
-            '<img src="img/'.$value['picture'].'" class="card-img-top" alt="">'.
+            '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
               '<div class="card-body">'.
                 '<h5 class="card-title">'.$value['name'].'</h5>'.
                 '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>'.
-                '<h6>In prison since '.$value['prison_date'].'<h6>'.
+                '<h6>Current status : '.@strtoupper($value['status']).'<h6>'.
                 '<a href="#" class="btn btn-primary">En savoir +</a>'.
               '</div>'.
           '</div>';
