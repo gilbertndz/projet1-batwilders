@@ -5,7 +5,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/footer.css">';
+    <link rel="stylesheet" href="css/footer.css">
 
   <!-- Site footer -->
  <footer class="site-footer">

@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/about_bts.css">
-    
-
     <title>A propos</title>
-</head>
-<body>
     <?php include('header.php');
     include('about_data.php'); ?>
-
-
-    <div class="container d-flex justify-content-center">
+</head>
+<body>
+    <div class="container-sm d-flex justify-content-center">
         
         <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
     </div>
@@ -66,53 +62,35 @@
 </div>
     </div>
 
-    <!-- bt card grid -->
-    <div class="container mt-5">
-    <div class=" row row-cols-1 row-cols-md-4  g-3 ">
-  <div class="col ">
-    <div class="card">
-      <img src="img/joker.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">The Joker</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <?php 
-                        echo '<h6> In prison since '.$vilain[0]['prison_date'].'</h6>';
-                       ?>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/Mr._Freeze.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Mr. Freeze</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/bane.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Bane</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/poison_ivy.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Poison Ivy</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <!-- bt card via forcheach -->
+        
+    
+ 
+<div class="container hm-width">
+ <div class="row row-cols-1 row-cols-sm-2 g-3">
+  <?php
+              foreach($vilain as $value){
+          echo '<div class="col d-flex justify-content-center mt-3">';
+          echo '<div class="card" style="width: 18rem;">'.
+            '<img src="img/'.$value['picture'].'" class="card-img-top" alt="">'.
+              '<div class="card-body">'.
+                '<h5 class="card-title">'.$value['name'].'</h5>'.
+                '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>'.
+                '<h6>In prison since '.$value['prison_date'].'<h6>'.
+                '<a href="#" class="btn btn-primary">En savoir +</a>'.
+              '</div>'.
+          '</div>';
+          echo '</div>';
+        }
+      ?>
+    
+</div>
+</div>
 
         
-
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+    
+    
+ 
 
 <?php include('footer.php');
 ?>
