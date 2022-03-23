@@ -119,3 +119,20 @@ h1{
     object-fit: cover;
     object-position: top;
 }
+
+.wiki-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.wiki-title h2{
+    text-transform: uppercase;
+}
+
+.wiki-title h5{
+    font-size: 3.4vw;
+   
+}
