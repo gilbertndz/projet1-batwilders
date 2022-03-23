@@ -47,7 +47,7 @@
         <article class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante c
         </article>
-        <button class="button-1" role="button">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></button>
+        <button class="button-1" role="button"><a href="about_bootstrap.php" style="text-decoration: none; color: white;">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></a></button>
 
       </section>
 
@@ -56,8 +56,8 @@
         <article class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante c
         </article>
-        <button class="button-1" role="button">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></button>
-      </section>
+        <button class="button-1" role="button"><a href="services.php" style="text-decoration: none; color: white;">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></a></button>
+    </section>
     </section>
 
     <section class="flex-content">
@@ -66,7 +66,7 @@
         <article class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante c
         </article>
-        <button class="button-1" role="button">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></button>
+        <button class="button-1" role="button"><a href="actu.html" style="text-decoration: none; color: white;">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></a></button>
       </section>
 
       <section class="block-content">
@@ -74,8 +74,8 @@
         <article class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante c
         </article>
-        <button class="button-1" role="button">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></button>
-      </section>
+        <button class="button-1" role="button"><a href="contact.php" style="text-decoration: none; color: white;">En savoir plus &nbsp <img src="img/plus.svg" alt="logo plus"></a></button>
+        </section>
     </section>
     <?php include 'footer.php' ?>
   </main>
