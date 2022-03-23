@@ -9,17 +9,19 @@
            <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
          </li>
          <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="about_bootstrap.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             A propos
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Communauté
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="about_bootstrap.php">A propos</a>
              <a class="dropdown-item" href="#">FAQ</a>
            </div>
          <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="services.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Services
+             Nos services
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="services.php">Services</a>
              <a class="dropdown-item" href="#">Avis client</a>
            </div>
          <li class="nav-item">
