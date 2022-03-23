@@ -19,21 +19,21 @@
           <div class="col-xs-6 col-md-3">
             <h6>Services</h6>
             <ul class="footer-links">
-              <li><a href="">Bat Rescue</a></li>
-              <li><a href="">Bat Ride</a></li>
-              <li><a href="">Super Bat duo</a></li>
-              <li><a href="">Bat Fun</a></li>
-              <li><a href=""></a></li>
+              <li><a href="" style="text-decoration: none">Bat Rescue</a></li>
+              <li><a href="" style="text-decoration: none">Bat Ride</a></li>
+              <li><a href="" style="text-decoration: none">Super Bat duo</a></li>
+              <li><a href="" style="text-decoration: none">Bat Fun</a></li>
+              <li><a href="" style="text-decoration: none"></a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
             <h6>Liens rapides</h6>
             <ul class="footer-links">
-              <li><a href="">Acceuil</a></li>
-              <li><a href="">A propos</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="" style="text-decoration: none">Acceuil</a></li>
+              <li><a href="" style="text-decoration: none">A propos</a></li>
+              <li><a href="" style="text-decoration: none">Services</a></li>
+              <li><a href="" style="text-decoration: none">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -48,10 +48,10 @@
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#" style="display: flex; justify-content: center; align-items:center"><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#" style="display: flex; justify-content: center; align-items:center"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#" style="display: flex; justify-content: center; align-items:center"><i class="fa-brands fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#" style="display: flex; justify-content: center; align-items:center"><i class="fa-brands fa-linkedin"></i></a></li>   
+              <li><a class="facebook" href="#" style="display: flex; justify-content: center; align-items:center; text-decoration: none"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#" style="display: flex; justify-content: center; align-items:center; text-decoration: none"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#" style="display: flex; justify-content: center; align-items:center; text-decoration: none"><i class="fa-brands fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#" style="display: flex; justify-content: center; align-items:center; text-decoration: none"><i class="fa-brands fa-linkedin"></i></a></li>   
             </ul>
           </div>
         </div>
