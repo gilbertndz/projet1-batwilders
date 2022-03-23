@@ -25,11 +25,11 @@
       </div>
 
       <ul class="open-desktop">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">A propos de Batman</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="actu.html">Actualités</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="about.php">A propos de Batman</a></li>
+        <li><a href="services.php">Services</a></li>
+        <li><a href="actu.php">Actualités</a></li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
     </nav>
   </header>
