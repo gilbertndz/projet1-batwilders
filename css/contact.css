@@ -60,7 +60,33 @@
     div.button{
         padding-bottom: 5vh;
     }
+
+    div.urgence{
+        align-items: center;
+        padding-top: 3vh;
+        color: red;
+        font-weight: 900;
+        font-size: larger;
+    }
+
+    #contact_select, #request_select{
+        width: 20vw;
+    }
+
+    .request, .contact{
+        align-items: center;
+    }
     
+    .warning{
+        display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    }
+
+    #imgwarn{
+        padding: 10px;
+    }
 
     @media (min-width: 780px) and (max-width: 1080px){
         div.flex{
