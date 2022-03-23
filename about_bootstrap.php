@@ -10,20 +10,22 @@
     <title>A propos</title>
 </head>
 <body>
-    <?php include('header.php'); ?>
+    <?php include('header.php');
+    include('about_data.php'); ?>
+
 
     <div class="container d-flex justify-content-center">
         
         <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
     </div>
 
-    <div class= "container-sm text-center bg-dark text-light rounded-3  align-items-center">
+    <div class= "container-sm text-center bg-dark text-light rounded-3  align-items-center"  >
         <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempora? Tempore vitae repudiandae nobis molestias ratione ea, rerum beatae praesentium laborum doloremque voluptas dolor molestiae, possimus deserunt voluptatem hic eius.</p>
     </div>
 
     <div class="faq">
         <h1>FAQ</h1>
-        <div class=" container-sm accordion p-0" id="accordionExample">
+        <div class=" container-sm accordion p-2.5" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -63,52 +65,57 @@
 </div>
     </div>
 
-
-    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel" data-bs-interval="10000" >
-  <div class="carousel-inner container-sm mt-5 mb-5">
-    <div class="carousel-item active p-3 text-center">
-      <p class="w-75 m-auto  text-light"> <span>"</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum voluptas facere sed totam possimus fugiat voluptatem.<span>"</span></p>
-      <h3>Patrick, Gotham City</h3>
-      <div class="rating">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div class="empty"></div>
-                </div>
-    </div>
-    <div class="carousel-item p-3 text-center">
-    <p class="w-75 m-auto  text-light"><span>"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum voluptas facere sed totam possimus fugiat voluptatem.<span>"</span></p>
-    <h3>Julie, Rathsamhausen</h3>
-    <div class="rating">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-    </div>
-    <div class="carousel-item p-3 text-center">
-    <p class="w-75 m-auto  text-light"><span>"</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum voluptas facere sed totam possimus fugiat voluptatem.<span>"</span></p>
-    <h3>Alfred, Gotham City</h3>
-    <div class="rating">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+    <!-- bt card grid -->
+    <div class="container mt-5">
+    <div class=" row row-cols-1 row-cols-md-4  g-3 ">
+  <div class="col ">
+    <div class="card">
+      <img src="img/joker.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">The Joker</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <?php 
+                        echo '<h6> In prison since '.$vilain[0]['prison_date'].'</h6>';
+                       ?>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="col">
+    <div class="card">
+      <img src="img/Mr._Freeze.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mr. Freeze</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/bane.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bane</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/poison_ivy.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Poison Ivy</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        
+
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+
+<?php include('avis_client.php');
+?>
+    
 
 
 
