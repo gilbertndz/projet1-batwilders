@@ -44,7 +44,7 @@
         <label for="user_tel">Telephone :</label>
         <input type="telephone" id="tel" name="user_tel" placeholder="ex : 0664764389";">
       </div>
-      <div>
+      <div class="request">
         <label for="user_request">Type de demande :</label>
         <select name="request" id="request_select">
           <option value="sauvetage">Sauvetage</option>
@@ -53,7 +53,7 @@
           <option value="uber">Bat-Uber</option>
         </select>
       </div>
-      <div>
+      <div class="contact">
         <label for="user_contact">Comment souhaitez vous être contacté :</label>
         <select name="contact" id="contact_select">
           <option value="telephone">Telephone</option>
@@ -65,13 +65,17 @@
       <div class="textarea">
         <textarea id="message" placeholder="Ecrivez votre bat-message" rows="7" cols="25"></textarea>
       </div>
-      <div>
-        <label for="user_prioritie">BAT-URGENCE</label>
-        <input type="checkbox" id="bat_urgence" name="bat_urgence">
+      <div class="warning">
+        <i class="fa-solid fa-triangle-exclamation" id="imgwarn"></i>
+        <div class="urgence">
+          <label for="user_prioritie">BAT-URGENCE</label>
+          <input type="checkbox" id="bat_urgence" name="bat_urgence">
+        </div>
+        <i class="fa-solid fa-triangle-exclamation" id="imgwarn"></i>
       </div>
-      <div class="button">
-        <button class="submit" type="submit" value="Envoyer">Envoyer</button>
-      </div>
+        <div class="button">
+          <button class="submit" type="submit" value="Envoyer">Envoyer</button>
+        </div>
   </div>
   </form>
 </main>
