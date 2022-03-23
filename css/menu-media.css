@@ -1,0 +1,8 @@
+@media (min-width: 992px) {
+#navbarNavDropdown {
+    display: flex!important;
+    flex-basis: auto;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+}
+}
