@@ -70,7 +70,7 @@
       </section>
 
       <section class="block-content">
-        <h2>A propos</h2>
+        <h2>Contact</h2>
         <article class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante c
         </article>
