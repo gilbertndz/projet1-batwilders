@@ -1,3 +1,4 @@
+   <link rel="stylesheet" href="css/menu-media.css">
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
      <img src="img/batman-logo-inverted.png" alt="logo batman" style=" width:20%; margin: 2vw;" />
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
