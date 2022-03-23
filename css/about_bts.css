@@ -2,8 +2,9 @@ body{
     background-color: #a39695;
 }
 
-.hm-cont-w{
-    margin: 1vw;
+.hm-width{
+    width: 100%;
+    margin: 10vw auto 20vw;
 }
 
 .module {
