@@ -1,42 +1,7 @@
 *{
-    font-family: poppins;
+    font-family: 'Poppins';
 }
 
-header {
-    background-color: dimgrey;
-}
-/* BURGER */ 
-nav {margin:0;padding:0;}
-   nav ul {display: flex;flex-direction: column;list-style-type:none;padding:0;margin:0;display:none;}
-   nav ul.opening {display:block;height:30px;margin-bottom: 400px;}
-   nav li {border-bottom:1px solid #f6f4e2; }
-   nav li:last-child {border-bottom:none; }
-   nav a {color:#000;display:block;padding:1.5em 4em 1.5em 3em;text-transform:uppercase;text-decoration:none;}
-   nav a:hover, nav a:focus {background: #4D4D4D; }
-   .site-nav--icon {font-size:1.4em;margin-right:1em;width:1.1em;text-align:right;}
-   .menu-toggle {position:absolute;padding:0.8em;top:1em;right: .5em;cursor:pointer;}
-   .hamburger, .hamburger::before, .hamburger::after {content:'';display:block;height:3px;width:2em;background-color: black;border-radius:3px;-webkit-transition:all ease-in-out350ms;transition:all ease-in-out350ms;}
-   .hamburger::before {-webkit-transform: translateY(-7px);transform: translateY(-7px);}
-   .hamburger::after {-webkit-transform: translateY(4px);transform: translateY(4px);}
-   .open .hamburger {-webkit-transform: rotate(45deg);transform: rotate(45deg);}
-   .open .hamburger::before {display:none; }
-   .open .hamburger::after {-webkit-transform: translateY(-1px) rotate(-90deg);transform: translateY(-1px) rotate(-90deg);}
-
-
-   @media (min-width:780px) {
-
-  /* BURGER TABLETTE - DESKTOP */
-   .menu-toggle {display:none;}
-   nav ul {display: flex;flex-direction: row;justify-content: flex-end;}
-   nav li {flex:1 1 auto;border:none;}
-   nav li a {padding:1.5em 1.3em 1.5em 1.3em;margin:0;border:none;color:#000;}
-   nav a:hover,  nav a:focus {background-color: white }
-   .logo {flex:0 0 200px;margin:0;padding-left:20px;}
-   nav {display: flex;flex-direction: row;justify-content: space-between;text-align:center;}
-  #front-img {width: 100%; height: 388px;}
-  section#presentation {display: flex}
-  img#txt-presentation {width: 100%; height: 366px;}
-   }*/
    body{
        margin: 0px;
    }
@@ -44,20 +9,17 @@ nav {margin:0;padding:0;}
     H1, form div{
         display: flex;
         flex-direction: column;
-        //align-items: center;
         padding-top: 1vh;
-        padding-bottom: 1vh;
     }
 
-    form input{
-        background-color: #4D4D4D;
+    form input {
+        background-color: #343a40;
         color: white;
         border: 0px;
         border-radius: 8px;
         height: 30px;
         font-size: larger;
-        padding: 10px 16px;
-
+        padding: 10px 0px;
     }
 
     .textbox{
@@ -65,7 +27,7 @@ nav {margin:0;padding:0;}
     }
 
     textarea{
-        background-color: #4D4D4D;
+        background-color: #343a40;
         color: white;
         border: 0px;
         border-radius: 8px;
@@ -73,7 +35,7 @@ nav {margin:0;padding:0;}
         font-size: larger;
     }
 
-    button{
+    button.submit{
         height: 50px;
         width: 120px;
         border-radius: 15px;
@@ -83,7 +45,7 @@ nav {margin:0;padding:0;}
         background-image: url(/img/imgsubmit.svg);
         background-repeat: no-repeat;
         background-position: 13% 50%;
-        background-color: #4D4D4D;
+        background-color: #343a40;
         border: 0px;
         color: white;
         font-size: larger;
@@ -94,6 +56,11 @@ nav {margin:0;padding:0;}
         text-align: left;
         padding: 10px 16px;
     }
+
+    div.button{
+        padding-bottom: 5vh;
+    }
+    
 
     @media (min-width: 780px) and (max-width: 1080px){
         div.flex{
@@ -123,4 +90,3 @@ nav {margin:0;padding:0;}
             padding-top: 40px;
         }
     }
-*/
