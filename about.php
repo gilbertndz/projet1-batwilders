@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>About</title>
 </head>
 
@@ -19,7 +21,7 @@
 
             <ul class="open desktop">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos de Batman</a></li>
+                <li><a href="about.php">A propos de Batman</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="actu.html">Actualités</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -183,7 +185,8 @@
     </style>
 
 
-    <div class="top-banner">
+    <div>
+       
         <h1>About</h1>
 
         <div class="portrait"></div>
@@ -306,13 +309,13 @@
         <div class="nemesis">
             <div class="portrait joker">
                 <div class="info">
-                    <h3>En savoir +</h3>
+                    <button type="button" class="btn btn-dark text-nowrap btn-sm">En savoir +</button>
                 </div>
             </div>
 
             <div class="portrait freeze">
                 <div class="info">
-                    <h3>En savoir +</h3>
+                    <button type="button" class="btn btn-dark text-nowrap">En savoir +</button>
                 </div>
             </div>
             <div class="portrait bane">
@@ -327,6 +330,7 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/nav.js"></script>
