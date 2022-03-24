@@ -73,7 +73,7 @@
                 '<p class="card-text mb-2"> Some quick example text to build on the card title.</p>'.
                 '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
                 
-                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 text-nowrap">En savoir +</a></div>'.
+                '<div class="text-center"> <a href="#" class="btn btn-light mt-2 text-nowrap">En savoir +</a></div>'.
               '</div>'.
           '</div>';
           echo '</div>';
@@ -85,7 +85,7 @@
     
 <div class="text-center mt-4 mb-5">
 <a href="about_bootstrap.php">
-  <button type="button" class="btn btn-primary btn-lg">Retour</button>
+  <button type="button" class="btn btn-dark btn-lg">Retour</button>
 </a>
 </div>
 

@@ -15,7 +15,8 @@
     <div class="container-sm d-flex justify-content-center">
         
         <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
-    </div>
+    </div>  
+    
 
     <div class= "container-sm  text-center bg-dark text-light rounded-3  align-items-center"  >
         <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempora? Tempore vitae repudiandae nobis molestias ratione ea, rerum beatae praesentium laborum doloremque voluptas dolor molestiae, possimus deserunt voluptatem hic eius.</p>
@@ -66,12 +67,12 @@
     <!-- bt card via forcheach -->
     
 
-    <div class="card wiki">
-    <div class='wiki-title'>   
+    <div class="card wiki bg-dark ">
+    <div class='wiki-title bg-dark text-light'>   
     <h2>Wiki-Vilain</h2>
-    <h5>Enrichissez la Bat-Database en renseignant un super-vilain</h5>
+    <h5 class="fs-4" style="color:#ffc107">Enrichissez la Bat-Database en renseignant un super-vilain</h5>
     </div>
-      <div class="card-body d-flex justify-content-center p-5 pt-0">
+      <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-0 ">
         
         <form action="wiki_vilain_submit.php" method="POST" enctype="application/x-www-form-urlencoded">
           <div class="mb-3">
@@ -119,7 +120,7 @@
                 '<p class="card-text mb-2 ">Some quick example text to build on the card title.</p>'.
                 '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
                 
-                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 text-nowrap">En savoir +</a></div>'.
+                '<div class="text-center"> <a href="#" class="btn btn-light mt-2 text-nowrap">En savoir +</a></div>'.
               '</div>'.
           '</div>';
           echo '</div>';
