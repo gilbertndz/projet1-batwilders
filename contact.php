@@ -22,8 +22,19 @@
     <div classe="title">
       <H1> Contactez-nous</H1>
     </div>
-
-    <form>
+      <?php 
+       if(isset($_POST['user_firstName']) && isset($_POST['user_name']) && isset($_POST['user_mail']) && isset($_POST['user_tel']) && 
+       isset($_POST['request']) && isset($_POST['contact'])){
+         if(isset($_POST['bat_urgence'])){
+           echo '<h2 style="color:red; font-style: gras;">Votre BAT-URGENCE a bien été reçue '.$_POST['user_name'].'. Batman mets tout en oeuvre pour vous contacter par '.$_POST['contact']
+           .' pour le service que vous avez séléctionné :'.$_POST['request'].'. Cette requète est prioritaire.</h2>';
+         }
+         if(!isset($_POST['bat_urgence'])){
+           
+         }
+       }
+      ?>
+    <form action="contact.php" method="POST">
 
       <div class="flexname">
         <div>
@@ -38,32 +49,32 @@
 
       <div>
         <label for="user_mail">E-mail :</label>
-        <input type="email" id="mail" name="user_mail" placeholder="exemple@mail.fr" ;">
+        <input type="email" id="mail" name="user_mail" placeholder="default@exemple.com" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" ;">
       </div>
       <div>
         <label for="user_tel">Telephone :</label>
-        <input type="telephone" id="tel" name="user_tel" placeholder="ex : 0664764389";">
+        <input type="telephone" id="tel" name="user_tel" placeholder="ex : 0664764389" ;">
       </div>
       <div class="request">
         <label for="user_request">Type de demande :</label>
         <select name="request" id="request_select">
-          <option value="sauvetage">Sauvetage</option>
-          <option value="enquete">Enquête</option>
-          <option value="conseil">Conseils</option>
-          <option value="uber">Bat-Uber</option>
+          <option name="sauvetage" value="sauvetage">Sauvetage</option>
+          <option name="enquete" value="enquete">Enquête</option>
+          <option name="conseil" value="conseil">Conseils</option>
+          <option name="uber" value="uber">Bat-Uber</option>
         </select>
       </div>
       <div class="contact">
         <label for="user_contact">Comment souhaitez vous être contacté :</label>
         <select name="contact" id="contact_select">
-          <option value="telephone">Telephone</option>
-          <option value="mail">Mail</option>
-          <option value="street">Au detour d'une ruelle sombre</option>
-          <option value="surprise">Surprenez moi!</option>
+          <option name="telephone" value="telephone">Telephone</option>
+          <option name="mail" value="mail">Mail</option>
+          <option name="street" value="street">Au detour d'une ruelle sombre</option>
+          <option name="surprise" value="surprise">Surprenez moi!</option>
         </select>
       </div>
       <div class="textarea">
-        <textarea id="message" placeholder="Ecrivez votre bat-message" rows="7" cols="25"></textarea>
+        <textarea id="message" placeholder="Ecrivez votre bat-message" rows="7" cols="25" pattern="[a-zA-Z0-9]" ></textarea>
       </div>
       <div class="warning">
         <i class="fa-solid fa-triangle-exclamation" id="imgwarn"></i>
