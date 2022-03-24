@@ -25,7 +25,7 @@
       <?php 
        if(empty($_POST['user_firstName']) || empty($_POST['user_name']) || empty($_POST['user_mail']) || empty($_POST['user_tel'])){
       echo '<h2>Veuillez renseigner les champs obligatoirs marqués par une *. Les champs manquants sont :</h2>';
-      echo '<ul>';
+      echo '<ul class="contactListe">';
         if(empty($_POST['user_firstName'])){
             echo '<li>Nom</li>';
         }
@@ -42,9 +42,9 @@
       }elseif(isset($_POST['user_firstName']) && isset($_POST['user_name']) && isset($_POST['user_mail']) && isset($_POST['user_tel']) && 
        isset($_POST['request']) && isset($_POST['contact'])){
          if(isset($_POST['bat_urgence'])){
-           echo '<h2 style="color:red; font-style: gras;">Votre BAT-URGENCE a bien été reçue '.$_POST['user_name'].'. Batman mets tout en oeuvre pour vous contacter '
+           echo '<h3>Votre BAT-URGENCE a bien été reçue '.$_POST['user_name'].'. Batman mets tout en oeuvre pour vous contacter '
            .$_POST['contact']
-           .' pour le service que vous avez séléctionné : '.$_POST['request'].'. Cette requète est prioritaire.</h2>';
+           .' pour le service que vous avez séléctionné : '.$_POST['request'].'. Cette requète est prioritaire.</h3>';
          }
          if(!isset($_POST['bat_urgence'])){
            echo '<h2>Bonjour '.$_POST['user_name'].', votre demande pour '.$_POST['request'].' a bien été prise en compte. Batman rentrera en contact avec vous '
