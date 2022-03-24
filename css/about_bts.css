@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 body{
     background-color: dimgrey;
 }
+=======
+>>>>>>> 20560f633e0ed902ee1b69dafd523779859724ed
 
 .hm-width{
-    width: 100%;
+    width: 90%;
     margin: 10vw auto 20vw;
 }
 
@@ -16,7 +19,8 @@ body{
 }
 
 .logo {
-    width: 80%;
+    max-width: 22rem;
+    min-width: 2rem;
     height: auto;
     margin: 3rem 0 1.5rem;
 }
@@ -120,6 +124,12 @@ h1{
     object-position: top;
 }
 
+.card.wiki {
+    margin: 4rem 0 2rem;
+}
+
+
+
 .wiki-title{
     display: flex;
     flex-direction: column;
@@ -130,9 +140,54 @@ h1{
 
 .wiki-title h2{
     text-transform: uppercase;
+
 }
 
 .wiki-title h5{
     font-size: 3.4vw;
    
 }
+
+form{
+    width: 100%;
+}
+
+.hm-form-color{
+    background-color: #adb5bd;
+}
+
+.card-body.hm-submit h2 {
+    /*font-size: 1.5rem;*/
+    text-align: center;
+}
+
+.card-body.hm-submit h4{
+    color: #8d8d8d;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .content{
+        width: 70%;
+        margin: auto;
+    }
+
+    .hm-width{
+        width: 85%;
+    }
+
+}
+
+/*@media screen and (min-width: 1024px){
+
+    .logo img {
+    width: 50%;
+    height: auto;
+    margin: 3rem 0 1.5rem;
+    }
+}*/
