@@ -16,8 +16,6 @@
 
 <body>
   <header>
-    <?php include('./services_data.php');
-?>
     <nav class="site-nav">
       <img src="/img/logo.svg" alt="logo">
       <div class="menu-toggle">
@@ -33,10 +31,12 @@
       </ul>
     </nav>
   </header>
-  <main class="card" style="width: 18rem;">
+  <main class="card" style="width: 38rem;">
 
 <?php
   
+  include('./services_data.php');
+
   echo '<h1>'.'Mes Bat\' Services'.'</h1>';
 
   foreach($data as $values){
@@ -44,10 +44,10 @@
       echo '<div class="card-img-top">';
         echo '<img src="/img/'.$value['image'].'"width="" alt=" ">';
       echo '</div>';
-      echo '<div class="card-body">';
+      echo '<div class="card-body" id="popin">';
         echo '<h5 class="card-title">'.$value['title'].'</h5>';
         echo '<p class="card-text">'.$value['description'].'</p>';
-        echo '<a href="#" class="btn btn-primary">'.$value['button'].'</a>';
+        echo '<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="ok ca fontionne">'.$value['button'].'</button>';
       echo '</div>'; 
     }
   }
@@ -83,9 +83,9 @@
       <p>© Bat’Wilders - 2022</p>
     </div>
   </footer>
+  <script src="js/services.js"></script>
   <script src="js/jquery/jquery-3.4.1.min.js"></script>
   <script src="js/jquery/jquery.min.js"></script>
-  <script src="js/nav.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
