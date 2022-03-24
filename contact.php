@@ -26,11 +26,13 @@
        if(isset($_POST['user_firstName']) && isset($_POST['user_name']) && isset($_POST['user_mail']) && isset($_POST['user_tel']) && 
        isset($_POST['request']) && isset($_POST['contact'])){
          if(isset($_POST['bat_urgence'])){
-           echo '<h2 style="color:red; font-style: gras;">Votre BAT-URGENCE a bien été reçue '.$_POST['user_name'].'. Batman mets tout en oeuvre pour vous contacter par '.$_POST['contact']
-           .' pour le service que vous avez séléctionné :'.$_POST['request'].'. Cette requète est prioritaire.</h2>';
+           echo '<h2 style="color:red; font-style: gras;">Votre BAT-URGENCE a bien été reçue '.$_POST['user_name'].'. Batman mets tout en oeuvre pour vous contacter '
+           .$_POST['contact']
+           .' pour le service que vous avez séléctionné : '.$_POST['request'].'. Cette requète est prioritaire.</h2>';
          }
          if(!isset($_POST['bat_urgence'])){
-           
+           echo '<h2>Bonjour'.$_POST['user_name'].', votre demande pour '.$_POST['request'].' a bien été prise en compte. Batman rentrera en contact avec vous '
+           .$_POST['contact'].'. En attendant n\'hésitez pas a faire un tour dans notre rubrique actualités.</h2>';
          }
        }
       ?>
@@ -58,19 +60,19 @@
       <div class="request">
         <label for="user_request">Type de demande :</label>
         <select name="request" id="request_select">
-          <option name="sauvetage" value="sauvetage">Sauvetage</option>
-          <option name="enquete" value="enquete">Enquête</option>
-          <option name="conseil" value="conseil">Conseils</option>
-          <option name="uber" value="uber">Bat-Uber</option>
+          <option name="sauvetage" value="un sauvetage">Sauvetage</option>
+          <option name="enquete" value="une enquete">Enquête</option>
+          <option name="conseil" value="un conseil">Conseils</option>
+          <option name="uber" value="une course uber">Bat-Uber</option>
         </select>
       </div>
       <div class="contact">
         <label for="user_contact">Comment souhaitez vous être contacté :</label>
         <select name="contact" id="contact_select">
-          <option name="telephone" value="telephone">Telephone</option>
-          <option name="mail" value="mail">Mail</option>
-          <option name="street" value="street">Au detour d'une ruelle sombre</option>
-          <option name="surprise" value="surprise">Surprenez moi!</option>
+          <option name="telephone" value="par telephone">Telephone</option>
+          <option name="mail" value="par mail">Mail</option>
+          <option name="street" value="au detour d'une ruelle sombre">Au detour d'une ruelle sombre</option>
+          <option name="surprise" value="au moment ou vous vous y attendrez le moins">Surprenez moi!</option>
         </select>
       </div>
       <div class="textarea">
