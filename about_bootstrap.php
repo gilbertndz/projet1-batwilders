@@ -108,11 +108,11 @@
     
  
 <div class="hm-width">
- <div class="row row-cols-1 row-cols-sm-4 g-3">
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
   <?php
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
-          echo '<div class="card" style="width: 15rem;">'.
+          echo '<div class="card bg-dark text-light" style="width: 15rem;">'.
             '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
               '<div class="card-body">'.
                 '<h5 class="card-title">'.$value['name'].'</h5>'.

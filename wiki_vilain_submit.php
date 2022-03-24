@@ -14,7 +14,8 @@
 
 <?php include('header.php'); ?>
 
-<div class="card m-4">
+<div class="content">
+<div class="card m-4 bg-dark text-light">
   <div class="card-body hm-submit">
     <h2>Merci d'avoir soumis votre formulaire.</h2>
     <h4><?php echo $_POST['firstname'].' '.$_POST['lastname'].' est desormais repertorié comme super-vilain dans la Bat-Database.</h4>'; ?>
@@ -25,7 +26,7 @@
 
 
 <div class="container">
- <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3 mb-4 ">
+ <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3 mb-4 justify-content-center ">
   <?php
     
           echo '<div class="col d-flex justify-content-center mt-3">';
@@ -35,16 +36,15 @@
                 '<h5 class="card-title">'.$_POST['firstname'].' '.$_POST['lastname'].'</h5>'.
                 '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>'.
                 '<h6>Current status : '.@strtoupper($_POST['status']).'<h6>'.
-                '<a href="#" class="btn btn-primary">En savoir +</a>'.
-              '</div>'.
-          '</div>';
-          echo '</div>';
+                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 text-nowrap">En savoir +</a></div>'.
+                '</div>'.
+           '</div>';
         
       ?>
     
 </div>
 </div>
-
+</div>
 
 <?php 
         $i = count($vilain);
@@ -62,18 +62,18 @@
     
  
 <div class="container hm-width">
- <div class="row row-cols-1 row-cols-sm-4 g-3">
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
   <?php
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
-          echo '<div class="card" style="width: 15rem;">'.
+          echo '<div class="card bg-dark text-light" style="width: 15rem;">'.
             '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
               '<div class="card-body">'.
                 '<h5 class="card-title">'.$value['name'].'</h5>'.
                 '<p class="card-text mb-2"> Some quick example text to build on the card title.</p>'.
                 '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
                 
-                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 ">En savoir +</a></div>'.
+                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 text-nowrap">En savoir +</a></div>'.
               '</div>'.
           '</div>';
           echo '</div>';
