@@ -1,147 +1,33 @@
 * {
     font-family: 'Poppins';
-    background-color: #202020;
     color: whitesmoke;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
-header {
-    background-color: #202020;
+body {
+    background-color: dimgrey;
 }
 
-h1 {
-    padding: 10px;
-    margin: 25px;
+.card-body {
+    background-color: dimgrey;
+    width: 90%;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.card-img-top{
+    width: 90%;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
 }
 
-div.card{
-    text-align: center;
-    background-color: #4D4D4D;
-    border-radius: 14px;
-    padding: 20px;
-    width: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.card-img-top {
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    margin-bottom: 15px;
-}
-
-.btn btn-primary {
-    background-color: #717171;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.btn btn-primary:hover,
-.btn btn-primary:focus {
-    background-color: #4D4D4D;
-    border: solid 1px white;
-}
-
-footer {
-    margin-top: 20px;
-    background-color: #4D4D4D;
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
-
-footer p {
-    color: white;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-ul {
-    padding-left: 0rem;
-}
-
-
-.center-foot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.txt-center {
-    text-align: center;
-}
-
-.marg-foot {
-    padding: 10px
-}
-
-@media (min-width:780px) {
-
-    .flex-content {
-        display: flex;
-    }
-
-
-    footer {
-        margin-top: 55px;
-    }
-
-    img#logo-foot {
-        margin-left: 0px;
-    }
-
-    div#info-foot {
-        text-align: left;
-    }
-
-    div#footer-responsive {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    div#reseaux-sociaux {
-        margin-top: 0px;
-        padding: 20px
-    }
-
-    div#newsletter {
-        margin-top: 0px;
-        text-align: left;
-        padding: 20px
-    }
-
-    li {
-        text-align: left;
-    }
+.card {
+    background-color: lightgrey;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }

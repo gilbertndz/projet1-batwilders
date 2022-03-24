@@ -1,6 +1,9 @@
 *{
     font-family: 'Poppins';
 }
+    main{
+        padding: 0 3% 0 3%;
+    }
 
    body{
        margin: 0px;
@@ -88,6 +91,25 @@
         padding: 10px;
     }
 
+    ul.contactListe {
+        display: flex;
+        flex-direction: column;
+        padding: 3% 0% 3% 20px;
+        font-size: larger;
+        flex-wrap: nowrap;
+    }
+
+    h2{
+        font-size: larger;
+        padding-top: 3%;
+    }
+
+    h3 {
+        color: red;
+        font-size: xx-large;
+        font-weight: 900;
+    }
+
     @media (min-width: 780px) and (max-width: 1080px){
         div.flex{
             display: flex;
@@ -114,5 +136,8 @@
         }
         div.textarea{
             padding-top: 40px;
+        }
+        ul.contactListe{
+            padding: 3% 0 3% 50%;
         }
     }

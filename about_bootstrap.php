@@ -11,12 +11,14 @@
     include('about_data.php'); ?>
 </head>
 <body>
+  <div class="content">
     <div class="container-sm d-flex justify-content-center">
         
         <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
-    </div>
+    </div>  
+    
 
-    <div class= "container-sm text-center bg-dark text-light rounded-3  align-items-center"  >
+    <div class= "container-sm  text-center bg-dark text-light rounded-3  align-items-center"  >
         <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempora? Tempore vitae repudiandae nobis molestias ratione ea, rerum beatae praesentium laborum doloremque voluptas dolor molestiae, possimus deserunt voluptatem hic eius.</p>
     </div>
 
@@ -63,21 +65,62 @@
     </div>
 
     <!-- bt card via forcheach -->
+    
+
+    <div class="card wiki bg-dark ">
+    <div class='wiki-title bg-dark text-light'>   
+    <h2>Wiki-Vilain</h2>
+    <h5 class="fs-4" style="color:#ffc107">Enrichissez la Bat-Database en renseignant un super-vilain</h5>
+    </div>
+      <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-0 ">
         
+        <form action="wiki_vilain_submit.php" method="POST" enctype="application/x-www-form-urlencoded">
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Nom</label>
+            <input type="text" name='lastname' class="form-control" id="lastname" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="firstname" class="form-label">Prénom</label>
+            <input type="text" name='firstname' class="form-control" id="firstname" placeholder="">
+          </div>
+
+          <label for="status" class="form-label">Statut actuel</label>
+          <select class="form-select" name="status">
+          <option selected value="wanted">Recherché(e)</option>
+          <option value="in prison">En prison</option>
+          <option value="unknown">Inconnu</option>
+          </select>
+
+          <label for="picture" class="form-label">Portrait</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">URL</span>
+            <input type="text" name='picture' class="form-control" placeholder="Image URL only">
+          </div>
+
+
+          <div class="text-center">
+          <button type="submit" class="btn btn-primary">Soumettre</button>
+          </div>
+         </form>
+      </div>
+    </div>
+    </div>
+   
     
  
-<div class="container hm-width">
- <div class="row row-cols-1 row-cols-sm-2 g-3">
+<div class="hm-width">
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
   <?php
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
-          echo '<div class="card" style="width: 18rem;">'.
-            '<img src="img/'.$value['picture'].'" class="card-img-top" alt="">'.
+          echo '<div class="card bg-dark text-light" style="width: 15rem;">'.
+            '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
               '<div class="card-body">'.
                 '<h5 class="card-title">'.$value['name'].'</h5>'.
-                '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>'.
-                '<h6>In prison since '.$value['prison_date'].'<h6>'.
-                '<a href="#" class="btn btn-primary">En savoir +</a>'.
+                '<p class="card-text mb-2 ">Some quick example text to build on the card title.</p>'.
+                '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
+                
+                '<div class="text-center"> <a href="#" class="btn btn-light mt-2 text-nowrap">En savoir +</a></div>'.
               '</div>'.
           '</div>';
           echo '</div>';
@@ -90,7 +133,6 @@
         
     
     
- 
 
 <?php include('footer.php');
 ?>
