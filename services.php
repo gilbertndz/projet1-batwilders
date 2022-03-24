@@ -1,92 +1,48 @@
 <?php
- include('./services_data.php');
-?>
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Bat'services</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="/css/about_bts.css" rel="stylesheet" type="text/css">
-  <link href="/css/services.css" rel="stylesheet" type="text/css">
-</head>
+echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">';
+echo '<link href="/css/services.css" rel="stylesheet"';
+echo '<link href="/css/about_bts.css" rel="stylesheet" type="text/css">';
+echo '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+';
 
-<body>
-  <header>
-    <nav class="site-nav">
-      <img src="/img/logo.svg" alt="logo">
-      <div class="menu-toggle">
-        <div class="hamburger"></div>
-      </div>
+include ('./header.php') ;
 
-      <ul class="open-desktop">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">A propos de Batman</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="actu.html">Actualités</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="card" style="width: 38rem;">
+include ('./services_data.php');
 
-<?php
-  
-  include('./services_data.php');
+echo '<br/>';
 
-  echo '<h1>'.'Mes Bat\' Services'.'</h1>';
+echo '<body>';
 
-  foreach($data as $values){
-    foreach($values as $value){
-      echo '<div class="card-img-top">';
-        echo '<img src="/img/'.$value['image'].'"width="" alt=" ">';
-      echo '</div>';
-      echo '<div class="card-body" id="popin">';
-        echo '<h5 class="card-title">'.$value['title'].'</h5>';
-        echo '<p class="card-text">'.$value['description'].'</p>';
-        echo '<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="ok ca fontionne">'.$value['button'].'</button>';
-      echo '</div>'; 
-    }
-  }
- 
-  include('./avis_client.php');
+echo '<div id="service" class="container mt-3 mb-5">';
+
+    foreach($data as $title => $values){
+        echo '<div class="text-center pb-3">
+                <h3 class="dis play-4 font-weight-bold">'.$title.'</h3>
+                <hr class="w-50 mx-auto pb-0.1">
+             </div>';
+                
+                foreach($values as $value){
+                    echo '<div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 pb-5">
+                      <div class="card">
+                        <img class="card-img-top" src="/img/'.$value['image'].'" alt="image de service">
+                        <div class="card-body">
+                          <h5 class="card-title">'.$value['title'].'</h5>
+                          <p class="card-text">'.$value['description'].'</p>
+                          <a href="#" class="btn btn-dark">'.$value['button'].'</a>
+                        </div>
+                      </div>
+                    </div>';
+                    }
+        }
+
+echo '</body>';
+
+include ('./avis_client.php');
+
+ echo '<br/><br/>';
+
+include ('./footer.php');
 
 ?>
-
-  </main>
-  <footer>
-    <div id="footer-responsive">
-      <figure>
-        <img class="center-foot" src="/img/logo.svg" alt="logo">
-      </figure>
-      <div class="txt-center padding-20">
-        <ul>
-          <h3>Navigation</h3>
-          <li class="marg-foot">A propos</a></li>
-          <li class="marg-foot">Services</li>
-          <li class="marg-foot">Actualités</li>
-          <li class="marg-foot">Contact</li>
-        </ul>
-      </div>
-
-      <div class="margin-top txt-center" id="newsletter">
-        <h4>S'abonner à la newsletter</h4>
-        <p>Tenez vous informé(e) des nouvelles</p>
-        <input type="text" name="" value="" placeholder="E-mail"> <br>
-        <button class="uppercase margin-top-btn button-1" type="button" name="button">Envoyer</button>
-      </div>
-    </div>
-    <div class="txt-center margin-top padding-20">
-      <p>© Bat’Wilders - 2022</p>
-    </div>
-  </footer>
-  <script src="js/services.js"></script>
-  <script src="js/jquery/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
-
-</html>
