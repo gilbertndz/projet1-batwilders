@@ -23,7 +23,9 @@
       <H1> Contactez-nous</H1>
     </div>
       <?php 
-       if(isset($_POST['user_firstName']) && isset($_POST['user_name']) && isset($_POST['user_mail']) && isset($_POST['user_tel']) && 
+       if(empty($_POST['user_firstName']) || empty($_POST['user_name']) || empty($_POST['user_mail']) || empty($_POST['user_tel'])){
+      echo '<h2>Veuillez renseigner les champs obligatoirs marqués par une *.</h2>';
+      }elseif(isset($_POST['user_firstName']) && isset($_POST['user_name']) && isset($_POST['user_mail']) && isset($_POST['user_tel']) && 
        isset($_POST['request']) && isset($_POST['contact'])){
          if(isset($_POST['bat_urgence'])){
            echo '<h2 style="color:red; font-style: gras;">Votre BAT-URGENCE a bien été reçue '.$_POST['user_name'].'. Batman mets tout en oeuvre pour vous contacter '
@@ -31,7 +33,7 @@
            .' pour le service que vous avez séléctionné : '.$_POST['request'].'. Cette requète est prioritaire.</h2>';
          }
          if(!isset($_POST['bat_urgence'])){
-           echo '<h2>Bonjour'.$_POST['user_name'].', votre demande pour '.$_POST['request'].' a bien été prise en compte. Batman rentrera en contact avec vous '
+           echo '<h2>Bonjour '.$_POST['user_name'].', votre demande pour '.$_POST['request'].' a bien été prise en compte. Batman rentrera en contact avec vous '
            .$_POST['contact'].'. En attendant n\'hésitez pas a faire un tour dans notre rubrique actualités.</h2>';
          }
        }
@@ -40,21 +42,21 @@
 
       <div class="flexname">
         <div>
-          <label for="user_firstName">Nom :</label>
+          <label for="user_firstName">* Nom :</label>
           <input type="text" id="firstName" name="user_firstName" ;">
         </div>
         <div>
-          <label for="user_name">Prénom :</label>
+          <label for="user_name">* Prénom :</label>
           <input type="text" id="name" name="user_name" ;">
         </div>
       </div>
 
       <div>
-        <label for="user_mail">E-mail :</label>
+        <label for="user_mail">* E-mail :</label>
         <input type="email" id="mail" name="user_mail" placeholder="default@exemple.com" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" ;">
       </div>
       <div>
-        <label for="user_tel">Telephone :</label>
+        <label for="user_tel">* Telephone :</label>
         <input type="telephone" id="tel" name="user_tel" placeholder="ex : 0664764389" ;">
       </div>
       <div class="request">
