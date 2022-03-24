@@ -62,7 +62,7 @@
     
  
 <div class="container hm-width">
- <div class="row row-cols-2 row-cols-sm-2 g-3">
+ <div class="row row-cols-1 row-cols-sm-4 g-3">
   <?php
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
@@ -70,7 +70,7 @@
             '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
               '<div class="card-body">'.
                 '<h5 class="card-title">'.$value['name'].'</h5>'.
-                '<p class="card-text mb-2 ">Some quick example text to build on the card title.</p>'.
+                '<p class="card-text mb-2"> Some quick example text to build on the card title.</p>'.
                 '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
                 
                 '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 ">En savoir +</a></div>'.

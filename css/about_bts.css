@@ -3,7 +3,7 @@ body{
 }
 
 .hm-width{
-    width: 100%;
+    width: 90%;
     margin: 10vw auto 20vw;
 }
 
@@ -159,4 +159,18 @@ form{
     width: 70%;
     text-align: center;
     font-size: 0.8rem;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .content{
+        width: 70%;
+        margin: auto;
+    }
+
+    .hm-width{
+        width: 85%;
+    }
+
 }

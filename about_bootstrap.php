@@ -11,12 +11,13 @@
     include('about_data.php'); ?>
 </head>
 <body>
+  <div class="content">
     <div class="container-sm d-flex justify-content-center">
         
         <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
     </div>
 
-    <div class= "container-sm text-center bg-dark text-light rounded-3  align-items-center"  >
+    <div class= "container-sm  text-center bg-dark text-light rounded-3  align-items-center"  >
         <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempora? Tempore vitae repudiandae nobis molestias ratione ea, rerum beatae praesentium laborum doloremque voluptas dolor molestiae, possimus deserunt voluptatem hic eius.</p>
     </div>
 
@@ -100,24 +101,14 @@
           <button type="submit" class="btn btn-primary">Soumettre</button>
           </div>
          </form>
-        
-        <?php 
-        $i = count($vilain);
-        if(isset($vilain[$i])){
-          
-           $vilain[]['name'] = $_POST['firstname'].' '.$_POST['lastname'];
-           $vilain[$i]['status'] = $_POST['status'];
-           $vilain[$i]['picture'] = $_POST['picture'];
-          }
-        
-          ?>
       </div>
+    </div>
     </div>
    
     
  
-<div class="container hm-width">
- <div class="row row-cols-2 row-cols-sm-2 g-3">
+<div class="hm-width">
+ <div class="row row-cols-1 row-cols-sm-4 g-3">
   <?php
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
@@ -128,7 +119,7 @@
                 '<p class="card-text mb-2 ">Some quick example text to build on the card title.</p>'.
                 '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
                 
-                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 ">En savoir +</a></div>'.
+                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 text-nowrap">En savoir +</a></div>'.
               '</div>'.
           '</div>';
           echo '</div>';
@@ -141,7 +132,6 @@
         
     
     
- 
 
 <?php include('footer.php');
 ?>
