@@ -14,8 +14,8 @@
 
 <?php include('header.php'); ?>
 
-<div class="card">
-  <div class="card-body m-auto">
+<div class="card m-4">
+  <div class="card-body hm-submit">
     <h2>Merci d'avoir soumis votre formulaire.</h2>
     <h4><?php echo $_POST['firstname'].' '.$_POST['lastname'].' est desormais repertorié comme super-vilain dans la Bat-Database.</h4>'; ?>
   </div>
@@ -25,7 +25,7 @@
 
 
 <div class="container">
- <div class="row row-cols-1 row-cols-sm-2 g-3 ">
+ <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3 mb-4 ">
   <?php
     
           echo '<div class="col d-flex justify-content-center mt-3">';
@@ -45,7 +45,50 @@
 </div>
 </div>
 
-<a href="about_bootstrap.php"><button type="button" class="btn btn-primary btn-lg">Retour</button></a>
+
+<?php 
+        $i = count($vilain);
+        if(isset($vilain[$i])){
+          
+           $vilain[]['name'] = $_POST['firstname'].' '.$_POST['lastname'];
+           $vilain[$i]['status'] = $_POST['status'];
+           $vilain[$i]['picture'] = $_POST['picture'];
+          }
+        
+          ?>
+      </div>
+    </div>
+   
+    
+ 
+<div class="container hm-width">
+ <div class="row row-cols-2 row-cols-sm-2 g-3">
+  <?php
+              foreach($vilain as $value){
+          echo '<div class="col d-flex justify-content-center mt-3">';
+          echo '<div class="card" style="width: 15rem;">'.
+            '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
+              '<div class="card-body">'.
+                '<h5 class="card-title">'.$value['name'].'</h5>'.
+                '<p class="card-text mb-2 ">Some quick example text to build on the card title.</p>'.
+                '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
+                
+                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 ">En savoir +</a></div>'.
+              '</div>'.
+          '</div>';
+          echo '</div>';
+        }
+      ?>
+    
+</div>
+</div>
+    
+<div class="text-center mt-4 mb-5">
+<a href="about_bootstrap.php">
+  <button type="button" class="btn btn-primary btn-lg">Retour</button>
+</a>
+</div>
+
 
 <?php include('footer.php'); ?>   
 </body>

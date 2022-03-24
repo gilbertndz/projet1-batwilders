@@ -65,12 +65,12 @@
     <!-- bt card via forcheach -->
     
 
-    <div class="card">
+    <div class="card wiki">
     <div class='wiki-title'>   
     <h2>Wiki-Vilain</h2>
-    <h5>Enrichissez la Bat-Database en soumettant un super-vilain</h5>
+    <h5>Enrichissez la Bat-Database en renseignant un super-vilain</h5>
     </div>
-      <div class="card-body">
+      <div class="card-body d-flex justify-content-center p-5 pt-0">
         
         <form action="wiki_vilain_submit.php" method="POST" enctype="application/x-www-form-urlencoded">
           <div class="mb-3">
@@ -96,8 +96,9 @@
           </div>
 
 
-          
+          <div class="text-center">
           <button type="submit" class="btn btn-primary">Soumettre</button>
+          </div>
          </form>
         
         <?php 
@@ -116,17 +117,18 @@
     
  
 <div class="container hm-width">
- <div class="row row-cols-1 row-cols-sm-2 g-3">
+ <div class="row row-cols-2 row-cols-sm-2 g-3">
   <?php
               foreach($vilain as $value){
           echo '<div class="col d-flex justify-content-center mt-3">';
-          echo '<div class="card" style="width: 18rem;">'.
+          echo '<div class="card" style="width: 15rem;">'.
             '<img src="'.@$value['picture'].'" class="card-img-top" alt="">'.
               '<div class="card-body">'.
                 '<h5 class="card-title">'.$value['name'].'</h5>'.
-                '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>'.
-                '<h6>Current status : '.@strtoupper($value['status']).'<h6>'.
-                '<a href="#" class="btn btn-primary">En savoir +</a>'.
+                '<p class="card-text mb-2 ">Some quick example text to build on the card title.</p>'.
+                '<h6>Current status : '.@strtoupper($value['status']).'</h6>'.
+                
+                '<div class="text-center"> <a href="#" class="btn btn-primary mt-2 ">En savoir +</a></div>'.
               '</div>'.
           '</div>';
           echo '</div>';

@@ -120,6 +120,12 @@ h1{
     object-position: top;
 }
 
+.card.wiki {
+    margin: 4rem 0 2rem;
+}
+
+
+
 .wiki-title{
     display: flex;
     flex-direction: column;
@@ -130,9 +136,27 @@ h1{
 
 .wiki-title h2{
     text-transform: uppercase;
+
 }
 
 .wiki-title h5{
     font-size: 3.4vw;
    
+}
+
+form{
+    width: 100%;
+}
+
+.card-body.hm-submit h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-body.hm-submit h4{
+    color: #8d8d8d;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-size: 0.8rem;
 }
