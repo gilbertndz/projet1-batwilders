@@ -8,21 +8,6 @@ echo '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bo
 
 include ('./header.php') ;
 
-<<<<<<< HEAD
-      <ul class="open-desktop">
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="about.php">A propos de Batman</a></li>
-        <li><a href="services.php">Services</a></li>
-        <li><a href="actu.php">Actualités</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="card" style="width: 18rem;">
-=======
-include ('./services_data.php');
->>>>>>> origin
-
 echo '<br/>';
 
 echo '<body>';
