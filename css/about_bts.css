@@ -16,8 +16,21 @@
     max-width: 22rem;
     min-width: 2rem;
     height: auto;
-    margin: 3rem 0 1.5rem;
+    margin: 1rem 0 0.5rem;
+    opacity: 95%;
 }
+
+.banner{
+   
+    margin: 2rem 0 0;
+    background-image: url(../img/city_banner.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom:  solid 3px #dee2e6;
+}
+
+
 
 h1{
     text-align: start;
@@ -163,6 +176,19 @@ form{
     font-size: 0.8rem;
 }
 
+.crime-checkbox{
+    display: flex;
+}
+
+.crime-checkbox label:nth-child(1){
+    display: flex;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.crime-checkbox label {
+    margin-right: 1rem ;
+}
 
 @media screen and (min-width: 768px){
 

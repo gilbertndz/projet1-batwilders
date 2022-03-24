@@ -12,13 +12,13 @@
 </head>
 <body>
   <div class="content">
-    <div class="container-sm d-flex justify-content-center">
+    <div class="container-sm d-flex justify-content-center banner">
         
-        <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
+        <img class="logo" src="img/batman-logo-inverted.png" alt="Batman Logo">
     </div>  
     
 
-    <div class= "container-sm  text-center bg-dark text-light rounded-3  align-items-center"  >
+    <div class= "container-sm  text-center bg-dark text-light align-items-center rounded-bottom"  >
         <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempora? Tempore vitae repudiandae nobis molestias ratione ea, rerum beatae praesentium laborum doloremque voluptas dolor molestiae, possimus deserunt voluptatem hic eius.</p>
     </div>
 
@@ -95,6 +95,38 @@
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">URL</span>
             <input type="text" name='picture' class="form-control" placeholder="Image URL only">
+          </div>
+
+
+          <div class="crime-checkbox">
+            <label for="crime">Méfait</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Vol
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Default checkbox
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Default checkbox
+            </label>
+          </div>
           </div>
 
 
