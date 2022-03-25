@@ -30,7 +30,7 @@ echo '<div id="service" class="container mt-3 mb-5">';
              </div>';
                 
                 foreach($values as $value){
-                    echo '<div class="row">
+                    echo '<div class="row gil-flex">
                     <div class="col-lg-4 col-md-6 col-12 pb-5">
                       <div class="card">
                         <img class="card-img-top" src="/img/'.$value['image'].'" alt="image de service">
