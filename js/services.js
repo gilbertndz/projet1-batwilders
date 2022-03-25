@@ -1,5 +1,5 @@
-$(function (pop) {
+$(function (popover) {
     $('[data-bs-toggle="popover"]').popover()
   })
   
-popover = new bootstrap.Popover(pop, options);
+popover = console.log (new bootstrap.Popover(pop, options));
