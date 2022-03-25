@@ -70,7 +70,7 @@
     <div class="card wiki bg-dark ">
     <div class='wiki-title bg-dark text-light'>   
     <h2>Wiki-Vilain</h2>
-    <h5 class="fs-4" style="color:#ffc107">Enrichissez la Bat-Database en renseignant un super-vilain</h5>
+    <h5 class="fs-4" style="color:#adb5bd">Enrichissez la Bat-Database en renseignant un super-vilain</h5>
     </div>
       <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-5 ">
         
