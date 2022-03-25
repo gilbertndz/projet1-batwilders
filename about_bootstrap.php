@@ -12,13 +12,13 @@
 </head>
 <body>
   <div class="content">
-    <div class="container-sm d-flex justify-content-center">
+    <div class="container-sm d-flex justify-content-center banner">
         
-        <img class="logo" src="img/batman-logo-png.png" alt="Batman Logo">
+        <img class="logo" src="img/batman-logo-inverted.png" alt="Batman Logo">
     </div>  
     
 
-    <div class= "container-sm  text-center bg-dark text-light rounded-3  align-items-center"  >
+    <div class= "container-sm  text-center bg-dark text-light align-items-center rounded-bottom"  >
         <p class="p-4 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, tempora? Tempore vitae repudiandae nobis molestias ratione ea, rerum beatae praesentium laborum doloremque voluptas dolor molestiae, possimus deserunt voluptatem hic eius.</p>
     </div>
 
@@ -72,7 +72,7 @@
     <h2>Wiki-Vilain</h2>
     <h5 class="fs-4" style="color:#ffc107">Enrichissez la Bat-Database en renseignant un super-vilain</h5>
     </div>
-      <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-0 ">
+      <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-5 ">
         
         <form action="wiki_vilain_submit.php" method="POST" enctype="application/x-www-form-urlencoded">
           <div class="mb-3">
@@ -85,17 +85,49 @@
           </div>
 
           <label for="status" class="form-label">Statut actuel</label>
-          <select class="form-select" name="status">
+          <select class="form-select mb-3" name="status">
           <option selected value="wanted">Recherché(e)</option>
           <option value="in prison">En prison</option>
           <option value="unknown">Inconnu</option>
           </select>
 
           <label for="picture" class="form-label">Portrait</label>
-          <div class="input-group mb-3">
+          <div class="input-group mb-5">
             <span class="input-group-text" id="basic-addon1">URL</span>
             <input type="text" name='picture' class="form-control" placeholder="Image URL only">
           </div>
+
+
+          <!-- <div class="crime-checkbox">
+            <label for="crime">Méfait</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Braquage
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Enlevement
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Escroquerie
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Tentative d'anéantissement du Monde
+            </label>
+          </div>
+          </div> -->
 
 
           <div class="text-center">
