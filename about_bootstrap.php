@@ -72,7 +72,7 @@
     <h2>Wiki-Vilain</h2>
     <h5 class="fs-4" style="color:#ffc107">Enrichissez la Bat-Database en renseignant un super-vilain</h5>
     </div>
-      <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-0 ">
+      <div class="card-body hm-form-color d-flex justify-content-center p-5 pt-5 ">
         
         <form action="wiki_vilain_submit.php" method="POST" enctype="application/x-www-form-urlencoded">
           <div class="mb-3">
@@ -85,14 +85,14 @@
           </div>
 
           <label for="status" class="form-label">Statut actuel</label>
-          <select class="form-select" name="status">
+          <select class="form-select mb-3" name="status">
           <option selected value="wanted">Recherché(e)</option>
           <option value="in prison">En prison</option>
           <option value="unknown">Inconnu</option>
           </select>
 
           <label for="picture" class="form-label">Portrait</label>
-          <div class="input-group mb-3">
+          <div class="input-group mb-5">
             <span class="input-group-text" id="basic-addon1">URL</span>
             <input type="text" name='picture' class="form-control" placeholder="Image URL only">
           </div>
