@@ -195,6 +195,21 @@ form{
     margin-right: 1rem ;
 }
 
+.hm-title{
+    background-color: #212529;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    padding: 1rem 0rem;
+    margin: 8rem auto -2rem;
+}
+
+.hm-title h3 {
+    font-size: 1.3rem;
+    
+}
+
 @media screen and (min-width: 768px){
 
     .content{

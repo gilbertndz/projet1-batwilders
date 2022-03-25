@@ -46,6 +46,11 @@
 </div>
 </div>
 
+
+  <div class="hm-title">
+    <h3>Entrées récentes :</h3>
+  </div>
+
 <?php 
         $i = count($vilain);
         if(isset($vilain[$i])){
