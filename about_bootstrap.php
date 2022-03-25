@@ -98,36 +98,36 @@
           </div>
 
 
-          <div class="crime-checkbox">
+          <!-- <div class="crime-checkbox">
             <label for="crime">Méfait</label>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-              Vol
+              Braquage
             </label>
           </div>
 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-              
+              Enlevement
             </label>
           </div>
 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-              Default checkbox
+              Escroquerie
             </label>
           </div>
 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-              Default checkbox
+              Tentative d'anéantissement du Monde
             </label>
           </div>
-          </div>
+          </div> -->
 
 
           <div class="text-center">

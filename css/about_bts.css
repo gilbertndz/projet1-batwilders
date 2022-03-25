@@ -178,12 +178,18 @@ form{
 
 .crime-checkbox{
     display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
 }
 
 .crime-checkbox label:nth-child(1){
     display: flex;
     font-weight: bold;
-    margin-right: 1rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
 }
 
 .crime-checkbox label {
