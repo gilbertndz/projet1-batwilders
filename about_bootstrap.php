@@ -12,6 +12,8 @@
 </head>
 <body>
   <div class="content">
+
+  <div class="container">
     <div class="container-sm d-flex justify-content-center banner">
         
         <img class="logo" src="img/batman-logo-inverted.png" alt="Batman Logo">
@@ -21,6 +23,7 @@
     <div class= "container-sm  text-center bg-dark text-light align-items-center rounded-bottom"  >
         <p class="p-4 m-0">Ce site est une initiative de la ville de Gotham destinée à centraliser les demandes relatives à l'action de Batman et ses associés. <br>
       Il a été créé pour remplacer le Bat'signal et permettre une meilleure prise en charge des urgences criminelles sur le territoire de la ville.</p>
+    </div>
     </div>
 
     <div class="faq">
