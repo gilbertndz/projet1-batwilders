@@ -1,17 +1,16 @@
 * {
-    font-family: 'Poppins';
-    color: whitesmoke;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: rgb(20, 16, 16);
+    background-color: whitesmoke;
     text-align: center;
 }
 
 .card-body {
-    background-color: dimgrey;
+    background-color: lightgrey;
     width: 90%;
     border-radius: 7%;
     margin-top: 15px;
@@ -28,7 +27,7 @@ body {
 }
 
 .card {
-    background-color: lightgrey;
+    background-color: dimgrey;
     border-radius: 30px;
     margin-right: 10px;
     margin-left: 10px;
@@ -47,15 +46,8 @@ h5 {
     font-size: 24px;
 }
   
-/* Popover styling
+/* Popover styling */
 
-.popover__wrapper {
-    background-color: lightgrey;
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 1em 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }*/
   
 a {
     text-decoration: none;
@@ -80,7 +72,7 @@ a {
     position: sticky;
     left: -150px;
     transform: translate(0, 10px);
-    background-color: dimgrey;
+    background-color: lightgrey;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     border-radius: 3px;
   }
@@ -104,9 +96,6 @@ a {
     transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
   }
 
-@media screen and (min-width:780px) {
-    .card {
-        display: flex;
-        justify-content:center;
-    }
+#carouselExampleControls {
+    background-color: dimgrey;
 }
